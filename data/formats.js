@@ -1,5 +1,17 @@
 exports.BattleFormats = {
 	// formats
+	CMSUbersPlus: {
+		mod: 'CMS',
+		effectType: 'Format',
+		name: 'CMS Ubers+',
+		rated: true,
+		challengeShow: true,
+		searchShow: true,
+		isTeambuilderFormat: true,
+		debug: true,
+		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
+		banlist: []
+	},
 	randombattle: {
 		effectType: 'Format',
 		name: "Random Battle",
