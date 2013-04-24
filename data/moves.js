@@ -326,6 +326,54 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Water"
 	},
+	"swifttorrent": {
+		num: 953,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		desc: "Deals damage to one adjacent target. Makes contact. Priority +1.",
+		shortDesc: "Usually goes first.",
+		id: "swifttorrent",
+		isViable: true,
+		name: "Swift Torrent",
+		pp: 20,
+		priority: 2,
+		isContact: true,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 2
+				}
+			}
+		},
+		target: "normal",
+		type: "Water"
+	},
+	"whalerush": {
+		num: 963,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		desc: "Deals damage to one adjacent target. Makes contact. Priority +1.",
+		shortDesc: "Usually goes first.",
+		id: "whalerush",
+		isViable: true,
+		name: "Whale Rush",
+		pp: 20,
+		priority: 2,
+		isContact: true,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 2
+				}
+			}
+		},
+		target: "normal",
+		type: "Water"
+	},
 	"aquaring": {
 		num: 392,
 		accuracy: true,
@@ -5887,6 +5935,25 @@ exports.BattleMovedex = {
 		secondary: {
 			chance: 10,
 			status: 'frz'
+		},
+		target: "normal",
+		type: "Ice"
+	},
+	"icecoldbed": {
+		num: 2000,
+		accuracy: 70,
+		basePower: 170,
+		category: "Special",
+		desc: "Deals damage to one adjacent target with a 10% chance to freeze it.",
+		shortDesc: "10% chance to freeze the target.",
+		id: "icecoldbed",
+		isViable: true,
+		name: "Ice Cold Bed",
+		pp: 10,
+		priority: 0,
+		secondary: {
+			chance: 70,
+			status: 'slp'
 		},
 		target: "normal",
 		type: "Ice"

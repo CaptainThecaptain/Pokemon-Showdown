@@ -58,8 +58,68 @@ exports.BattleAbilities = {
 				if (type === 'toxicrain') return false;
 			},
 		},
+		"airlock": {
+		desc: "While this Pokemon is active, all weather conditions and their effects are disabled.",
+		shortDesc: "While this Pokemon is active, all weather conditions and their effects are disabled.",
+		onStart: function(pokemon) {
+			this.add('-message', 'The effects of weather disappeared. (placeholder)');
+			this.setWeather('none');
+			this.weatherData.duration = 0;
+			this.add('The weather was erased by Air Lock!')
+		},
+		onAnyModifyPokemon: function(pokemon) {
+			pokemon.ignore['WeatherTarget'] = true;
+		},
+		onAnyTryWeather: false,
+		id: "airlock",
+		name: "Air Lock",
+		rating: 3,
+		num: 76
+		},
+		"chlorophyll": {
+		desc: "If this Pokemon is active while Sunny Day is in effect, its speed is temporarily doubled.",
+		shortDesc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
+		onModifySpe: function(spe) {
+			if (this.isWeather('sunnyday')) {
+				return spe * 1.5;
+			}
+		},
+		id: "chlorophyll",
+		name: "Chlorophyll",
+		rating: 2,
+		num: 34
+	},
+	"swiftswim": {
+		desc: "If this Pokemon is active while Rain Dance is in effect, its speed is temporarily doubled.",
+		shortDesc: "If Rain Dance is active, this Pokemon's Speed is doubled.",
+		onModifySpe: function(spe, pokemon) {
+			if (this.isWeather('raindance')) {
+				return spe * 1.5;
+			}
+		},
+		id: "swiftswim",
+		name: "Swift Swim",
+		rating: 2,
+		num: 33
+	},
+	"sandrush": {
+		desc: "Doubles Speed in a Sandstorm, and makes the Pokemon immune to Sandstorm damage.",
+		shortDesc: "If Sandstorm is active, this Pokemon's Speed is doubled; immunity to Sandstorm.",
+		onModifySpe: function(spe, pokemon) {
+			if (this.isWeather('sandstorm')) {
+				return spe * 1.5;
+			}
+		},
+		onImmunity: function(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		id: "sandrush",
+		name: "Sand Rush",
+		rating: 2,
+		num: 146
+	},
 		"trickster" : {
-			desc: "When this Pokemon enters the battlefield, it causes a permanent Toxic Rain that can only be stopped by Air Lock, Cloud Nine or another weather condition.",
+			desc: "When this Pokemon enters the battlefield, it causes a permanent Trick Room that can only be stopped by Air Lock, Cloud Nine or another weather condition.",
 			shortDesc: "On switch-in, this Pokemon summons Toxic Rain until another weather replaces it.",
 			onStart: function(pokemon) {
 				this.debug("Starting Trickster Trick Room");

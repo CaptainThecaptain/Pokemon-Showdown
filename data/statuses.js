@@ -207,13 +207,6 @@ exports.BattleStatuses = {
 		},
 		onLockMove: function(pokemon) {
 			return this.effectData.move;
-		},
-		onBeforeTurn: function(pokemon) {
-			var move = this.getMove(this.effectData.move);
-			if (move.id) {
-				this.debug('Forcing into '+move.id);
-				this.changeDecision(pokemon, {move: move.id});
-			}
 		}
 	},
 	choicelock: {
@@ -317,7 +310,7 @@ exports.BattleStatuses = {
 				this.effectData.counter *= 2;
 			}
 			this.effectData.duration = 2;
-		},
+		}
 	},
 	rage: {
 		duration: 2,
@@ -425,7 +418,7 @@ exports.BattleStatuses = {
 			return 5;
 		},
 		onModifySpD: function(spd, pokemon) {
-			if (pokemon.hasType('Rock')) {
+			if (pokemon.hasType('Rock') && this.isWeather('sandstorm')) {
 				return spd * 3/2;
 			}
 		},
@@ -440,7 +433,7 @@ exports.BattleStatuses = {
 		onResidualOrder: 1,
 		onResidual: function() {
 			this.add('-weather', 'Sandstorm', '[upkeep]');
-			this.eachEvent('Weather');
+			if (this.isWeather('sandstorm')) this.eachEvent('Weather');
 		},
 		onWeather: function(target) {
 			this.damage(target.maxhp/16);
@@ -469,7 +462,7 @@ exports.BattleStatuses = {
 		onResidualOrder: 1,
 		onResidual: function() {
 			this.add('-weather', 'Hail', '[upkeep]');
-			this.eachEvent('Weather');
+			if (this.isWeather('hail')) this.eachEvent('Weather');
 		},
 		onWeather: function(target) {
 			this.damage(target.maxhp/16);

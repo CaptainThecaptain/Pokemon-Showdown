@@ -1,9 +1,10 @@
 exports.BattleFormats = {
 	// formats
-	CMSUbersPlus: {
+	
+/*	CMSUbersPlus: {
 		mod: 'CMS',
 		effectType: 'Format',
-		name: 'CMS Ubers+',
+		name: 'Super Ubers',
 		rated: true,
 		challengeShow: true,
 		searchShow: true,
@@ -11,7 +12,7 @@ exports.BattleFormats = {
 		debug: true,
 		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
 		banlist: []
-	},
+		}, */
 	randombattle: {
 		effectType: 'Format',
 		name: "Random Battle",
@@ -23,22 +24,22 @@ exports.BattleFormats = {
 		searchShow: true,
 		ruleset: ['PotD', 'Pokemon', 'Sleep Clause']
 	},
-	joimmonsou: {
-		mod: 'joimmons',
+	cmssuperubers: {
+		mod: 'CMS',
 		effectType: 'Format',
-		name: 'Joimmons OU',
+		name: 'CMS Super Ubers',
 		rated: true,
 		challengeShow: true,
 		searchShow: true,
 		isTeambuilderFormat: true,
 		debug: true,
-		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Sleep Clause', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause'],
+		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
 		banlist: ['Uber', 'Soul Dew']
 	},
-	joimmonsubers: {
-		mod: 'joimmons',
+/*	joimmonsubers: {
+		mod: 'CMS',
 		effectType: 'Format',
-		name: 'Joimmons Ubers',
+		name: 'CMS Super Ubers',
 		rated: true,
 		challengeShow: true,
 		searchShow: true,
@@ -46,7 +47,7 @@ exports.BattleFormats = {
 		debug: true,
 		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
 		banlist: []
-	},
+	}, */
 	joimmonsdoubles: {
 		mod: 'joimmons',
 		effectType: 'Format',
@@ -57,8 +58,8 @@ exports.BattleFormats = {
 		searchShow: true,
 		isTeambuilderFormat: true,
 		debug: true,
-		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Evasion Abilities Clause'],
-		banlist: ['Uber', 'Soul Dew']
+		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview'],
+		banlist: []
 	},
 	gen1ou: {
 		mod: 'gen1',

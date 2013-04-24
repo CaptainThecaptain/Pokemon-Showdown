@@ -1,4 +1,52 @@
 exports.BattleMovedex = {
+"swifttorrent": {
+		num: 953,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		desc: "Deals damage to one adjacent target. Makes contact. Priority +1.",
+		shortDesc: "Usually goes first.",
+		id: "swifttorrent",
+		isViable: true,
+		name: "Swift Torrent",
+		pp: 20,
+		priority: 2,
+		isContact: true,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 2
+				}
+			}
+		},
+		target: "normal",
+		type: "Water"
+	},
+	"whalerush": {
+		num: 963,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		desc: "Deals damage to one adjacent target. Makes contact. Priority +1.",
+		shortDesc: "Usually goes first.",
+		id: "whalerush",
+		isViable: true,
+		name: "Swift Torrent",
+		pp: 20,
+		priority: 2,
+		isContact: true,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 2
+				}
+			}
+		},
+		target: "normal",
+		type: "Water"
+	},
 "icecoldbed": {
 		num: 2000,
 		accuracy: 70,
