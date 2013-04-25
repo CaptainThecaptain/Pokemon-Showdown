@@ -25,7 +25,7 @@ exports.BattleFormats = {
 		ruleset: ['PotD', 'Pokemon', 'Sleep Clause']
 	},
 	cmssuperubers: {
-		mod: 'CMS',
+		mod: 'CMSUbers',
 		effectType: 'Format',
 		name: 'CMS Super Ubers',
 		rated: true,
@@ -34,7 +34,7 @@ exports.BattleFormats = {
 		isTeambuilderFormat: true,
 		debug: true,
 		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
-		banlist: ['Uber', 'Soul Dew']
+		banlist: []
 	},
 /*	joimmonsubers: {
 		mod: 'CMS',

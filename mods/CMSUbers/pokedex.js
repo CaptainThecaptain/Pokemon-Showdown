@@ -1,4 +1,8 @@
 exports.BattlePokedex = {
+deoxysdefense:{num:386,species:"Deoxys-Defense",baseSpecies:"Deoxys",forme:"Defense",formeLetter:"D",types:["Psychic"],gender:"N",baseStats:{hp:50,atk:70,def:160,spa:70,spd:160,spe:90},abilities:{0:"Magic Bounce"},heightm:1.7,weightkg:60.8,color:"Red",eggGroups:["No Eggs"]},
+smeargle:{num:235,species:"Smeargle",types:["Normal"],baseStats:{hp:180,atk:85,def:85,spa:85,spd:85,spe:85},abilities:{0:"Magic Bounce",1:"Technician"},heightm:1.2,weightkg:58,color:"White",eggGroups:["Ground"]},
+deoxysspeed:{num:386,species:"Deoxys-Speed",baseSpecies:"Deoxys",forme:"Speed",formeLetter:"S",types:["Psychic","Fighting"],
+gender:"N",baseStats:{hp:50,atk:110,def:90,spa:110,spd:90,spe:150},abilities:{0:"Magic Bounce"},heightm:1.7,weightkg:60.8,color:"Red",eggGroups:["No Eggs"]},
 charizard:{num:6,species:"Charizard",types:["Fire","Dragon"],genderRatio:{M:0.875,F:0.125},baseStats:{hp:78,atk:84,def:78,spa:109,spd:85,spe:100},abilities:{0:"Levitate",1:"Moxie",DW:"Solar Power"},heightm:1.7,weightkg:90.5,color:"Red",prevo:"charmeleon",evoLevel:36,eggGroups:["Monster","Dragon"]},
 blastoise:{num:9,species:"Blastoise",types:["Water"],genderRatio:{M:0.875,F:0.125},baseStats:{hp:79,atk:83,def:100,spa:85,spd:105,spe:78},abilities:{0:"Drizzle",1:"Hydration",DW:"Rain Dish"},heightm:1.6,weightkg:85.5,color:"Blue",prevo:"wartortle",evoLevel:36,eggGroups:["Monster","Water 1"]},
 ninetales:{num:38,species:"Ninetales",types:["Fire"],genderRatio:{M:0.25,F:0.75},baseStats:{hp:73,atk:76,def:75,spa:81,spd:100,spe:100},abilities:{0:"Flash Fire",DW:"Defeatist"},heightm:1.1,weightkg:19.9,color:"Yellow",prevo:"vulpix",evoLevel:1,eggGroups:["Ground"]},
