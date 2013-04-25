@@ -1,18 +1,6 @@
 exports.BattleFormats = {
 	// formats
 	
-/*	CMSUbersPlus: {
-		mod: 'CMS',
-		effectType: 'Format',
-		name: 'Super Ubers',
-		rated: true,
-		challengeShow: true,
-		searchShow: true,
-		isTeambuilderFormat: true,
-		debug: true,
-		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
-		banlist: []
-		}, */
 	randombattle: {
 		effectType: 'Format',
 		name: "Random Battle",
@@ -36,6 +24,30 @@ exports.BattleFormats = {
 		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
 		banlist: []
 	},
+	cmsuu: {
+		mod: 'CMSUU',
+		effectType: 'Format',
+		name: "CMS UU",
+		section: "Singles",
+		rated: true,
+		challengeShow: true,
+		searchShow: true,
+		isTeambuilderFormat: true,
+		ruleset: ['Standard DW','Team Preview','Species Clause','Sleep Clause'],
+		banlist: ['OU','BL','Shell Smash + Baton Pass']
+	},
+	/* cmsru: {
+		mod: 'CMSRU',
+		effectType: 'Format',
+		name: "CMS RU",
+		section: "Singles",
+		rated: true,
+		challengeShow: true,
+		searchShow: true,
+		isTeambuilderFormat: true,
+		ruleset: ['Standard DW','Team Preview','Species Clause','Sleep Clause'],
+		banlist: ['UU', 'BL2', 'Shell Smash + Baton Pass']
+	}, */
 /*	joimmonsubers: {
 		mod: 'CMS',
 		effectType: 'Format',
@@ -48,10 +60,10 @@ exports.BattleFormats = {
 		ruleset: ['CAP Pokemon', 'Standard DW', 'Team Preview', 'Species Clause'],
 		banlist: []
 	}, */
-	joimmonsdoubles: {
-		mod: 'joimmons',
+	cmssuperubersdoubles: {
+		mod: 'CMSUbers',
 		effectType: 'Format',
-		name: 'Joimmons Doubles',
+		name: 'CMS Super Uber Doubles',
 		gameType: 'doubles',
 		rated: true,
 		challengeShow: true,
