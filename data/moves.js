@@ -350,16 +350,16 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Water"
 	},
-	"whalerush": {
-		num: 963,
+	"whalenet": {
+		num: 3000,
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
 		desc: "Deals damage to one adjacent target. Makes contact. Priority +1.",
 		shortDesc: "Usually goes first.",
-		id: "whalerush",
+		id: "whalenet",
 		isViable: true,
-		name: "Whale Rush",
+		name: "Whale Net",
 		pp: 20,
 		priority: 2,
 		isContact: true,
@@ -12620,6 +12620,61 @@ exports.BattleMovedex = {
 		target: "all",
 		type: "Psychic"
 	},
+/*	"trickroom": {
+		num: 433,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "For 5 turns, all active Pokemon with lower Speed will move before those with higher Speed, within their priority brackets. If this move is used during the effect, the effect ends. Priority -7.",
+		shortDesc: "For 5 turns, slower Pokemon move first.",
+		id: "trickroom",
+		isViable: true,
+		name: "Trick Room",
+		pp: 5,
+		priority: -7,
+		onHitField: function(target, source, effect) {
+			if (this.pseudoWeather['trickroom']) {
+				this.removePseudoWeather('trickroom', source, effect, '[of] '+source);
+			} else {
+				this.addPseudoWeather('trickroom', source, effect, '[of] '+source);
+			}
+		},
+		effect: {
+			duration: 0,
+			durationCallback: function(target, source, effect) {
+				if (source && source.ability === 'persistent') {
+					return 0;
+				}
+				return 0;
+			},
+			onStart: function(target, source) {
+				this.add('-fieldstart', 'move: Trick Room', '[of] '+source);
+			},
+			onModifyDef: function(def, pokemon) {
+			if (pokemon.getStat('def') < pokemon.getStat('atk')) {
+				return def == (pokemon.getStat('atk') - 30);
+				}
+			if (pokemon.getStat('def') > pokemon.getStat('atk')) {
+				return def += 65;
+				}
+				},
+			if (pokemon.getStat('spd') < pokemon.getStat('spa')) {
+				return spd == (pokemon.getStat('spa') - 30);
+			}
+			if (pokemon.getStat('spd') > pokemon.getStat('spa')) {
+				return spd += 65;
+			}
+			},
+			
+			onResidualOrder: 23,
+			onEnd: function() {
+				this.add('-fieldend', 'move: Trick Room');
+			}
+		},
+		secondary: false,
+		target: "all",
+		type: "Psychic"
+	}, */
 	"triplekick": {
 		num: 167,
 		accuracy: 90,

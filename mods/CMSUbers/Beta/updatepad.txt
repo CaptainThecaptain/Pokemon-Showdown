@@ -1,0 +1,50 @@
+Beta Update Pad
+
+Suggestion: Make water immune to burn?
+Give gyarados Crunch.
+
+Burn is far stronger:
+cuts Special Attack to 75% (Guts still blocks this)
+Deals an additional 30 damage per turn.
+However, Ghost and Dark types are now immune.
+
+New Moves:
+Ice Cold Bed:
+Pow: 170
+Acc: 70
+Type: Ice (Special)
+Affected by Magic Bounce 
+Effect: 70% chance to sleep on hit
+Learned by: sketch users.
+
+Whale Net:
+Pow: 100
+Acc: 100
+Type: Water (Special)
+Priority: -1
+Effect: +3 defense, +1 special defense.
+Learned by: sketch users.
+
+Swift Torrent:
+Pow: 60
+Acc: 100
+Type: Water (Physical)
+Priority: +2
+Effect: +2 speed
+Learned by: sketch users.
+
+Old move modifications:
+Sacred Fire: 
+Pow: 75
+Priority: +1 priority
+Learned by: Ho-oh I guess.
+
+Item modifications:
+Leftovers: recovers HP differently. 1/19th *1.2 of your speed stat + 50 per turn. Divides power of moves by 1.3.
+Black Sludge: recovers HP differently. 1/8th of your speed stat + 60 per turn.
+
+new pokemon mods:
+Fidgit:
+stats: 165/76/109/90/80/115
+
+

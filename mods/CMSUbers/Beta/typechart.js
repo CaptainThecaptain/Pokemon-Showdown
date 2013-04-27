@@ -23,7 +23,6 @@ exports.BattleTypeChart = {
   },
   "Dark": {
     "damageTaken": {
-	  brn: 3,
       "Bug": 1,
       "Dark": 2,
       "Dragon": 0,
@@ -102,7 +101,7 @@ exports.BattleTypeChart = {
       "Ground": 0,
       "Ice": 0,
       "Normal": 0,
-      "Poison": 0,
+      "Poison": 1,
       "Psychic": 1,
       "Rock": 2,
       "Steel": 0,
@@ -157,7 +156,6 @@ exports.BattleTypeChart = {
   },
   "Ghost": {
     "damageTaken": {
-	  brn: 3,
       "Bug": 2,
       "Dark": 1,
       "Dragon": 0,
@@ -229,7 +227,7 @@ exports.BattleTypeChart = {
       frz: 3,
       "Bug": 0,
       "Dark": 0,
-      "Dragon": 0,
+      "Dragon": 2,
       "Electric": 0,
       "Fighting": 1,
       "Fire": 1,
@@ -253,7 +251,7 @@ exports.BattleTypeChart = {
       "Dark": 0,
       "Dragon": 0,
       "Electric": 0,
-      "Fighting": 1,
+      "Fighting": 0,
       "Fire": 0,
       "Flying": 0,
       "Ghost": 3,
@@ -261,7 +259,7 @@ exports.BattleTypeChart = {
       "Ground": 0,
       "Ice": 0,
       "Normal": 0,
-      "Poison": 0,
+      "Poison": 1,
       "Psychic": 0,
       "Rock": 0,
       "Steel": 0,
