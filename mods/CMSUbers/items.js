@@ -1,4 +1,40 @@
 exports.BattleItems = {
+"blacksludge": {
+		id: "blacksludge",
+		name: "Black Sludge",
+		spritenum: 34,
+		fling: {
+			basePower: 30
+		},
+		onResidualOrder: 40,
+		onResidualSubOrder: 2,
+		onResidual: function(pokemon) {
+			if (pokemon.hasType('Poison')) {
+				this.heal(pokemon.getStat('spe')/16 + 60);
+			} else {
+				this.damage(pokemon.maxhp/8);
+			}
+			
+		},
+		desc: "Each turn, if holder is a Poison-type, restores 1/16 max HP; loses 1/8 if not."
+	},
+	"leftovers": {
+		id: "leftovers",
+		name: "Leftovers",
+		spritenum: 242,
+		fling: {
+			basePower: 10
+		},
+		onResidualOrder: 40,
+		onResidualSubOrder: 2,
+		onResidual: function(pokemon) {
+			this.heal(pokemon.getStat('spe')/19 *1.2 + 75 - pokemon.getStat('atk')/7 - pokemon.getStat('spa')/7 + pokemon.getStat('def')/14 + pokemon.getStat('spd')/14);
+		}
+		},
+		onBasePower: function(basePower, user) {
+			user.addVolatile('lifeorb');
+			return basePower / 1.3;
+		},
 		"griseousorb": {
 			id: "griseousorb",
 			name: "Griseous Orb",

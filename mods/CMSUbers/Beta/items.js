@@ -14,6 +14,7 @@ exports.BattleItems = {
 			} else {
 				this.damage(pokemon.maxhp/8);
 			}
+			
 		},
 		desc: "Each turn, if holder is a Poison-type, restores 1/16 max HP; loses 1/8 if not."
 	},
@@ -33,10 +34,7 @@ exports.BattleItems = {
 		onBasePower: function(basePower, user) {
 			user.addVolatile('lifeorb');
 			return basePower / 1.3;
-		}
 		},
-		desc: "At the end of every turn, holder restores 1/16 of its max HP."
-	},
 		"griseousorb": {
 			id: "griseousorb",
 			name: "Griseous Orb",

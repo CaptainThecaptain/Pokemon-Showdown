@@ -69,6 +69,26 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Ice"
 	},
+	"sacredfire": {
+		num: 221,
+		accuracy: 95,
+		basePower: 75,
+		category: "Physical",
+		desc: "Deals damage to one adjacent target with a 50% chance to burn it. If the user is frozen, it will defrost before using this move.",
+		shortDesc: "50% chance to burn the target. Thaws user.",
+		id: "sacredfire",
+		isViable: true,
+		name: "Sacred Fire",
+		pp: 5,
+		priority: 1,
+		thawsUser: true,
+		secondary: {
+			chance: 60,
+			status: 'brn'
+		},
+		target: "normal",
+		type: "Fire"
+	},
 	"safeguard": {
 		num: 219,
 		accuracy: true,
