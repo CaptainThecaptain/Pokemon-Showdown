@@ -10,7 +10,7 @@ exports.BattleItems = {
 		onResidualSubOrder: 2,
 		onResidual: function(pokemon) {
 			if (pokemon.hasType('Poison')) {
-				this.heal(pokemon.getStat('spe')/8 + 60);
+				this.heal(pokemon.getStat('spe')/16 + 60);
 			} else {
 				this.damage(pokemon.maxhp/8);
 			}
@@ -27,7 +27,7 @@ exports.BattleItems = {
 		onResidualOrder: 40,
 		onResidualSubOrder: 2,
 		onResidual: function(pokemon) {
-			this.heal(pokemon.getStat('spe')/19 *1.2 + 50);
+			this.heal(pokemon.getStat('spe')/19 *1.2 + 75 - pokemon.getStat('atk')/7 - pokemon.getStat('spa')/7 + pokemon.getStat('def')/14 + pokemon.getStat('spd')/14);
 		}
 		},
 		onBasePower: function(basePower, user) {

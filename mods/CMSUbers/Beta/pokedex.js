@@ -1,4 +1,5 @@
 exports.BattlePokedex = {
+arghonaut:{num:-56,species:"Arghonaut",types:["Water","Fighting"],baseStats:{hp:125,atk:110,def:125,spa:70,spd:130,spe:75},abilities:{0:"Unaware"},heightm:1.7,weightkg:151,color:"",eggGroups:["Water 1","Water 3"]},
 fidgit:{num:-54,species:"Fidgit",types:["Poison","Ground"],baseStats:{hp:165,atk:76,def:109,spa:90,spd:80,spe:115},abilities:{0:"Persistent",1:"Vital Spirit"},heightm:0.9,weightkg:53,color:"",eggGroups:["Ground"]},
 deoxysdefense:{num:386,species:"Deoxys-Defense",baseSpecies:"Deoxys",forme:"Defense",formeLetter:"D",types:["Psychic"],gender:"N",baseStats:{hp:50,atk:70,def:160,spa:70,spd:160,spe:90},abilities:{0:"Magic Bounce"},heightm:1.7,weightkg:60.8,color:"Red",eggGroups:["No Eggs"]},
 smeargle:{num:235,species:"Smeargle",types:["Normal"],baseStats:{hp:180,atk:85,def:85,spa:85,spd:85,spe:85},abilities:{0:"Magic Bounce",1:"Technician"},heightm:1.2,weightkg:58,color:"White",eggGroups:["Ground"]},
