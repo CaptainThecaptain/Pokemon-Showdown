@@ -1,4 +1,5 @@
 exports.BattlePokedex = {
+deoxys:{num:386,species:"Deoxys",baseForme:"Normal",types:["Psychic"],gender:"N",baseStats:{hp:90,atk:130,def:90,spa:130,spd:90,spe:150},abilities:{0:"Mold Breaker",1:"Sturdy"},heightm:1.7,weightkg:60.8,color:"Red",eggGroups:["No Eggs"],otherFormes:["deoxysattack","deoxysdefense","deoxysspeed"]},
 arghonaut:{num:-56,species:"Arghonaut",types:["Water","Fighting"],baseStats:{hp:125,atk:110,def:125,spa:70,spd:130,spe:75},abilities:{0:"Unaware"},heightm:1.7,weightkg:151,color:"",eggGroups:["Water 1","Water 3"]},
 fidgit:{num:-54,species:"Fidgit",types:["Poison","Ground"],baseStats:{hp:165,atk:76,def:109,spa:90,spd:80,spe:115},abilities:{0:"Persistent",1:"Vital Spirit"},heightm:0.9,weightkg:53,color:"",eggGroups:["Ground"]},
 deoxysdefense:{num:386,species:"Deoxys-Defense",baseSpecies:"Deoxys",forme:"Defense",formeLetter:"D",types:["Psychic"],gender:"N",baseStats:{hp:50,atk:70,def:160,spa:70,spd:160,spe:90},abilities:{0:"Magic Bounce"},heightm:1.7,weightkg:60.8,color:"Red",eggGroups:["No Eggs"]},

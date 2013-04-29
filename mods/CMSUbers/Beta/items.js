@@ -10,7 +10,7 @@ exports.BattleItems = {
 		onResidualSubOrder: 2,
 		onResidual: function(pokemon) {
 			if (pokemon.hasType('Poison')) {
-				this.heal(pokemon.getStat('spe')/16 + 60);
+				this.heal(pokemon.getStat('spe')/16 + 35);
 			} else {
 				this.damage(pokemon.maxhp/8);
 			}
@@ -27,14 +27,24 @@ exports.BattleItems = {
 		},
 		onResidualOrder: 40,
 		onResidualSubOrder: 2,
-		onResidual: function(pokemon) {
-			this.heal(pokemon.getStat('spe')/19 *1.2 + 75 - pokemon.getStat('atk')/7 - pokemon.getStat('spa')/7 + pokemon.getStat('def')/14 + pokemon.getStat('spd')/14);
-		}
+		onResidual: function(pokemon) 
+		{
+		this.heal(pokemon.getStat('spe')/19 + 45 - pokemon.getStat('atk')/7 - pokemon.getStat('spa')/7 + pokemon.getStat('def')/14 + pokemon.getStat('spd')/14);
 		},
 		onBasePower: function(basePower, user) {
 			user.addVolatile('lifeorb');
 			return basePower / 1.3;
 		},
+		onModifyDef: function(def, pokemon) {	
+				return def + (pokemon.maxhp/3 + (pokemon.getStat('def') + pokemon.getStat('spd'))/6 - (pokemon.getStat('atk')+ pokemon.getStat('spa'))*4/12);
+			
+		},
+		onModifySpD: function(spd, pokemon) {
+				return spd + (pokemon.maxhp/3 + (pokemon.getStat('def') + pokemon.getStat('spd'))/6 - (pokemon.getStat('atk')+ pokemon.getStat('spa'))*4/12);
+			
+		},
+		
+		
 		"griseousorb": {
 			id: "griseousorb",
 			name: "Griseous Orb",
@@ -145,4 +155,4 @@ exports.BattleItems = {
 			onResidualSubOrder: 2,
 			desc: "Does a number of effects."
 		}
-};
+}

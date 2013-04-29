@@ -10,7 +10,7 @@ exports.BattleItems = {
 		onResidualSubOrder: 2,
 		onResidual: function(pokemon) {
 			if (pokemon.hasType('Poison')) {
-				this.heal(pokemon.getStat('spe')/16 + 60);
+				this.heal(pokemon.getStat('spe')/16 + 35);
 			} else {
 				this.damage(pokemon.maxhp/8);
 			}
@@ -25,16 +25,24 @@ exports.BattleItems = {
 		fling: {
 			basePower: 10
 		},
-		onResidualOrder: 40,
+		onResidualOrder: 5,
 		onResidualSubOrder: 2,
 		onResidual: function(pokemon) {
-			this.heal(pokemon.getStat('spe')/19 *1.2 + 75 - pokemon.getStat('atk')/7 - pokemon.getStat('spa')/7 + pokemon.getStat('def')/14 + pokemon.getStat('spd')/14);
-		}
-		},
+			this.heal(pokemon.getStat('spe')/19 + 90 - pokemon.getStat('atk')/3 - pokemon.getStat('spa')/3 + pokemon.getStat('def')/6 + pokemon.getStat('spd')/6);
+			},
 		onBasePower: function(basePower, user) {
-			user.addVolatile('lifeorb');
-			return basePower / 1.3;
+		user.addVolatile('lifeorb');
+		return basePower / 1.3;
+},
+		onModifyDef: function(def, pokemon) {	
+				return def + (pokemon.maxhp/3 - (pokemon.getStat('atk')+ pokemon.getStat('spa'))/4);
+			
 		},
+		onModifySpD: function(spd, pokemon) {
+				return spd + (pokemon.maxhp/3 - (pokemon.getStat('atk')+ pokemon.getStat('spa'))/4);
+		},
+		desc: "At the end of every turn, holder restores 1/16 of its max HP."
+	},
 		"griseousorb": {
 			id: "griseousorb",
 			name: "Griseous Orb",

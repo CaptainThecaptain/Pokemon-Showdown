@@ -1,0 +1,319 @@
+Pokemon ideas for idle
+
+cd C:/Users/MiniPC64B/Documents/GitHub/Pokemon-Showdown
+
+BH battles:
+http://www.pokemonshowdown.com/replay/dev-balancedhackmons-105
+
+<captain> arcticblast! just who I wanted to see
+<&Arcticblast> Hey
+<captain> so you said that my topic needed examples to show how far my modding would go right?
+<&Arcticblast> Yes
+<captain> so how's this? http://pastebin.com/hUD6MVER
+<&Arcticblast> Those are some crazy changes O.o
+<captain> so.....
+<&Arcticblast> You're free to post it
+
+PS capabilities:
+Type Chart Changes
+Movepool Changes
+Limited Move and Ability changes possible
+Pokemon Type Changes Possible
+Pokemon Stat Changes Possible
+Pokemon Ability Changes Possible. Supposed Limit of 3 abilities per mon.
+Pokemon movepool changes possible. bizarre limitations.
+
+metagames ideas:
+1. BH lite  mod
+2. Ubers mod
+3. NU nerf mod
+4. NU mod
+5. Ubers doubles
+
+Pranksters-spore: 2
+Magic Bounce: 4
+Vital Spirit/Insomnia: 3
+-Rayquaza, Mandibuzz, Gengar.
+Unaware: 4
+-shuckle, metagross, Regirock, chansey
+Sand Rush: 1
+-terrakion, Regirock
+Adaptability: 3
+farfetch'd, tentacool, regirock
+
+
+Statup ranking:
+1. Shell Smash, 
+2. Shift Gear, Butterfly Dance
+3. Dragon Dance, Swords Dance, Nasty Plot
+4. Bulk Up
+5. Calm Mind
+6. Curse
+7. Agility
+8. Cotton Guard
+9. Iron Defense etc....
+
+Movepool Ranking:
+1. All moves  Shadow Tag/Arena Trap
+3. All moves  ultra abilities
+4. All but no statups (baton pass may count)  sleep  best statup rank  ultra ability
+5. All but no statups  sleep  best statup rank  ultra ability
+5. Statup rank based
+6. Extended
+7. Restricted
+
+//Start here
+
+Captain's Super uber mod: More Power, More/Different Viability, More Weirdness. This mod will be built off Joimmons but this is not a slight Joimmons tweak.
+
+Type-chart changes (based on standard type chart not joimmons):
+SE: 
+Poison is SE to normal.
+Poison is SE to fighting.
+
+Neutral:
+Fighting is neutral to normal.
+
+Resist:
+Ice resists dragon.
+
+Critical hits no longer ignore boosts/drops and boosts damage to 140%.
+Crit rates are as follows:
+normal move: 0%
+1 critrate: 1/3 chance
+2 criterate or higher: always crit
+Additionally, the damage formula *always rolls minimum damage*
+
+Choice Specs/Choice Band: 1.5x both attacking stats.
+Black Sludge now heals twice as much.
+Accuracy boosts work the same way other stat boosts do.
+
+Old Moves: (all Implemented)
+
+(Poison)
+Poison Jab: Power raised to 100. Targets all other pokemon in Doubles.
+Gunk Shot: Power raised to 150.
+Sludge Wave: 40 power, +1 priority, raises speed 2 stages.
+
+(Ice)
+30% secondary chance of sleep (not freeze) (Implemented)
+
+(Ground)
+Earthquake: 80 power.
+
+(Bug)
+Leech Life: 50 power, restores 125% of damage dealt. Does not work with Big Root.
+
+(Dragon)
+Roar of Time:
+Effect change: 
++2 defenses. (Implemented)
+
+(Seismic-toss like moves)
+Dragon Rage: Deals 170 damage not 40. Ground Type.
+Night Shade: Power: 60 (Physical). Deals 150 additional damage not 100.
+Seismic Toss: Power 40 (Special) Deals 150 additional damage not 100.
+
+(Snore (will likely be nerfed due to lol OP flinch chance))
+Snore: 120 power. 90% chance to flinch target. Still only works if user is sleeping. Will likely nerf this.
+
+(Fight)
+Rock Smash: 80 power, always lowers defense.
+
+(Priority and Misc)
+Aqua Jet: 80 power, raises speed by +1.
+Flame Charge: raises attack not speed.
+Charge Beam: 35 power, 70 accuracy, raises special attack and speed (50% chance). +1 priority
+
+Weather:
+A lot of these mods are aesthetically silly (you'll see plenty of that) but I consider them positive changes to the metagame. 
+Manually summoning weather through the appropriate move lets it last 12 turns, 18 with Rock.
+
+Air Lock: instead of merely ignoring weather, it changes the weather to "none" completely erasing it until it is reintroduced.
+Sand: 
+now boosts the defense of steel types.
+now boosts power (x1.3) of steel moves. 
+now boosts the speed (x1.25) of ground types.
+Sand Rush boosts speed by x1.5 not 2.
+Hail: 
+now boosts the defense of ice types.
+now boosts the attack (x1.25) of poison types and boosts poison type moves.
+now cuts power of fighting moves to 75%.
+Sun: 
+now boosts the defense of fire types.
+now boosts the special defense of poison types.
+now cuts power of flying moves in half.
+now cuts power of ground moves in half.
+Chlorophyll boosts speed by x1.5 not 2.
+Rain:
+Swift Swim boosts speed by x1.5 not 2.
+
+Abilities:
+Magnet Pull: now traps ground, rock, fighting, fire, and steel.
+Solid Rock: take half damage from supereffective attacks.
+
+Pokemon mods:
+Pokemon mods archive was created by copypasting from Captain's files and Mewtwoforprez's files. 
+old: is a reference for me, ignore it.
+Ability: the abilities this pokemon has.
+Moves: moves added to the pokemon's movepool. a negative sign indicates taking it away from its movepool.
+
+Giratina
+Ability: Multiscale, Poison Heal;
+Status: Implemented.
+
+Forretress
+Moves: Recover
+status: Implemented;
+
+Ferrothorn
+Moves: Rapid Spin, Nasty Plot, Power Gem;
+old: 74/94/131/54/116/20
+stats: 74/131/113/110/98/20
+
+Wobbuffet
+Moves: Taunt, Recover, Magic Coat
+status: implemented
+
+Kyurem Black
+stats: 145/150/100/120/90/95
+Ability: Intimidate/Mold Breaker;
+Moves: Ice Shard, Icicle Crash, Earthquake;
+Status: Implemented;
+
+Palkia:
+Type: Dragon/Water;
+Ability: Prankster;
+moves: recover, heal order, Heartswap, leech seed, hydro cannon.
+Status: Implemented;
+
+shedinja:
+old: 16/105/60/45/45/55
+stats: 101/80/135/80/110/90
+Ability: Magic Guard, Solid Rock;
+Moves: Shell Smash, Recycle, Pain Split, Recover;
+
+Rayquaza:
+old: 105/150/90/150/90/95
+stats: 100/135/50/135/165/115
+BST:
+Type: Dragon/Dark;
+Ability: Air Lock, Thick Fat, Vital Spirit;
+Moves: Quiver Dance, Explosion, Spikes, Leech Seed, Toxic Spikes;
+Status: Implemented;
+niche: I have no idea wtf happened.
+
+Crygonal:
+old: 70/50/30/90/135/105
+new: 100/50/30/115/240/135
+BST: 670
+ability: dry skin;
+Status: Implemented
+
+Gurdurr:
+old: 85/105/85/40/50/40
+stats: 85/85/180/70/130/115
+Ability: -Guts, Marvel Scale, Sheer Force, Download;
+Moves: Blizzard, Dark Pulse;
+Type: Ice/Fight;
+Status: Implemented
+
+Conkeldurr:
+old: 105/140/85/55/65/45
+stats: 130/155/115/95/95/45
+Ability: Simple;
+Moves: Draco Meteor, Dragon Pulse;
+Type: Dragon/Fight;
+Status: Implemented
+
+Smeargle:
+old: 65/10/40/10/40/85
+stats: 310/85/85/85/85/85
+Type: Normal/Grass;
+abilties: Prankster, Magic Bounce, Own Temp, Trace, Magnet Pull;
+Status: Implemented;
+niche: Smeargle is secretely this mod's haxmon. All obey the haxmon.
+
+Deoxys:
+stats: 90/130/90/130/90/150
+ability: Sturdy, Mold Breaker;
+niche: hey Deoxys isn't just a shitty Deoxys-F and actually has a really nice stat spread.
+Status: Implemented
+
+Deoxys-S:
+old: 50/95/90/95/90/180
+stats: 50/110/90/110/90/150
+ability: Moody, Prankster, Magic Bounce, Speed Boost;
+Type: Psychic/Fight;
+Status: Implemented;
+
+Deoxys-D:
+stats: 50/135/185/85/160/110
+Type: Psychic/Ghost
+Ability: Magic Bounce;
+Status: Implemented;
+
+Muk
+Stats: 150/70/80/80/90/30
+Stench Buff
+Moves: Toxic Spikes -Imprison
+Status: Implemented: stat buff and toxic spikes added.
+
+Chandelure
+Shadow Tag is now legal
+Moves: -Imprison
+Status: Implemented: Shadow Tag legal, Flame Body isn't.
+
+Azumarill
+Stats: 95/55/80/50/80/50
+Moves: Belly Drum Ice Shard Mach Punch
+Status: Implemented.
+
+Mew
+Ability: Adaptability
+Moves: Psystrike, Blast Burn, Frenzy Plant, Hydro Cannon Lunar Dance
+status: implemented
+
+Manaphy
+Heart Swap Buff
+Moves: Baton Pass
+status: Implemented:  movepool uptodate.
+
+Celebi
+Natural Cure Buff
+Moves: Roar of Time Frenzy Plant Ingrain
+Status: Implemented: Ability unchanged.
+
+Kecleon
+Color Change Buff
+Stats: 100/60/100/90/120/70
+Status: Implemented: stats changed.
+
+Articuno
+Ability: Ice Body
+Status: Implemented, but Ice Body is unmodded.
+
+Persian
+Assist Buff
+Abilities: Prankster
+Moves: Encore, -Spite
+Status: Implemented: encore added, ability changed.
+
+Ambipom
+Abilities: Pickup/Run Away
+Spite Buff
+Moves: Extremespeed
+Status: Implemented: movepool update.
+
+Tynamo:
+old: 35/55/40/45/40/60
+stats: 106/111/126/101/126/111
+Moves: Energy Ball, Leaf Storm, Giga Drain, Knock Off, Leech Horn, Outrage;
+Status: Implemented;
+niche: Tynamo is a bulky pokemon with no weaknesses. it serves no other purpose other than that novelty.
+
+
+
+
+
+

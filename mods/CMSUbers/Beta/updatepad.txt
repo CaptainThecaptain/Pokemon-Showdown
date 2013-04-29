@@ -54,7 +54,7 @@ Black Sludge: recovers HP differently.
 More recovery if:
 higher speed
 lower max HP
-Mechanics: 1/16th of your speed stat + 60 per turn.
+Mechanics: 1/16th of your speed stat + 35 per turn.
 
 new pokemon mods:
 Fidgit:
@@ -64,4 +64,9 @@ Arghonaut:
 stats: 125/110/125/70/130/75
 Moves: Spikes, Toxic Spikes;
 
+Ferrothorn
+Moves: Rapid Spin, Nasty Plot, Power Gem;
+old: 74/94/131/54/116/20
+stats: 74/131/113/110/98/20
 
+Ninetales possibly slated for modding.
