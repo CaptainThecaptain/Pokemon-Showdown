@@ -28,10 +28,10 @@ exports.BattleItems = {
 		onResidualOrder: 5,
 		onResidualSubOrder: 2,
 		onResidual: function(pokemon) {
-			this.heal(pokemon.getStat('spe')/19 + 90 - pokemon.getStat('atk')/3 - pokemon.getStat('spa')/3 + pokemon.getStat('def')/6 + pokemon.getStat('spd')/6);
+			this.heal((pokemon.getStat('def') + pokemon.getStat('spd'))/32 - (pokemon.getStat('atk') + pokemon.getStat('spa'))/8 + (pokemon.getStat('def') + pokemon.getStat('spd'))/10);
+			this.heal(math.abs(pokemon.getmaxhp/16 + 15 - (pokemon.getStat('atk') + pokemon.getStat('spa'))/64))
 			},
 		onBasePower: function(basePower, user) {
-		user.addVolatile('lifeorb');
 		return basePower / 1.3;
 },
 		onModifyDef: function(def, pokemon) {	
